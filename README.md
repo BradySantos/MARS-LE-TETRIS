@@ -1,8 +1,7 @@
 README
-Instructions
+Instructions:
 
-Basic Instructions
-Syntax
+**Basic Instructions:**
 harddrop (I)
 harddrop rt, rs, imm
 attack (R)
@@ -25,8 +24,7 @@ nonclear (I)
 nonclear rs, rt, label
 
 
-Unique Instructions
-Syntax
+**Unique Instructions:**
 downstack (R)
 downstack
 topout (R)
