@@ -76,7 +76,9 @@ To run my custom MIPS language, download the MARS LE zip file, making sure the T
 
 _Basic Math Instructions_
 
-Sum of Even Numbers
+
+_Sum of Even Numbers_
+
 
 harddrop $t0, $zero, 0 # addi or li
 harddrop $t1, $zero, 100
@@ -90,7 +92,9 @@ stack $t2, $t0, $t2 # add
 
 nonclear $t0, $t1, Loop # bne
 
+
 _Other Math Instructions_
+
 
 harddrop $t3, $zero, 2
 
@@ -104,7 +108,9 @@ garbage $t7, $t4, $t3 #sub
 
 
 _Memory Instructions_
+
 Memory accessing
+
 
 harddrop $t0, $zero, 20 # addi
 
