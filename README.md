@@ -109,7 +109,7 @@ garbage $t7, $t4, $t3 #sub
 
 _Memory Instructions_
 
-Memory accessing
+_Memory accessing_
 
 
 harddrop $t0, $zero, 20 # addi
