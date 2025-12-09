@@ -1,6 +1,6 @@
-README
+# README
 
-**Instructions:**
+# Instructions:
 
 **Basic Instructions:**
 
@@ -67,10 +67,12 @@ slowgravity rt, rs, imm
 combo (I)
 combo imm
 
+# How to run:
 
 To run my custom MIPS language, download the MARS LE zip file, making sure the Tetris language is within the customlangs folder (directory: \MARS-LE-main\MARS-LE-main\mars\mips\instructions\customlangs). Then open your computer’s terminal and cd to the MARS LE directory: \MARS-LE-main\MARS-LE-main. Type java -jar BuildCustomLang.jar Tetris.java, and this should add the custom language to Mars LE when you open it. To switch languages, simply click Tools → Language Switcher. Clicking the question mark provides an overview of the Tetris language.
 
-**Example Programs**
+
+# Example Programs
 
 _Basic Math Instructions_
 
@@ -88,7 +90,8 @@ stack $t2, $t0, $t2 # add
 
 nonclear $t0, $t1, Loop # bne
 
-# Other Math Instructions
+_Other Math Instructions_
+
 harddrop $t3, $zero, 2
 
 harddrop $t4, $zero, 5
@@ -101,7 +104,8 @@ garbage $t7, $t4, $t3 #sub
 
 
 _Memory Instructions_
-# Memory accessing
+Memory accessing
+
 harddrop $t0, $zero, 20 # addi
 
 harddrop $t1, $zero, 10010000
@@ -122,7 +126,9 @@ End:
 
 
 _Unique Instructions_
+
 # Tetris (Note: ghostpiece, combo, slowgravity should be commented out before running as they are not fully implemented)
+
 harddrop $t0, $zero, 1 # Add 1 to all $t registers
 
 harddrop $t1, $zero, 1
