@@ -81,7 +81,9 @@ _Sum of Even Numbers_
 
 
 harddrop $t0, $zero, 0 # addi or li
+
 harddrop $t1, $zero, 100
+
 harddrop $t2, $zero, 0
 
 Loop:
