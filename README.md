@@ -91,7 +91,7 @@ End:
 
 
 _Unique Instructions_
-# Tetris
+# Tetris (Note: ghostpiece, combo, slowgravity should be commented out before running as they are not fully implemented)
 harddrop $t0, $zero, 1 # Add 1 to all $t registers
 harddrop $t1, $zero, 1
 harddrop $t2, $zero, 1
@@ -112,13 +112,13 @@ harddrop $t0, $zero, 19
 drop $t0 # Add random num 1 to 4 to chosen register
 topout # If any $t registers have values 20 or greater, set $t registers to 0, $s0 to 0, print final score
 
-# ghostpiece $v0, $t1, 10 # Preview what the register value would be if you were to add 10; value is stored in $v0
+ghostpiece $v0, $t1, 10 # Preview what the register value would be if you were to add 10; value is stored in $v0
 
-# combo 6 # Add 6 to all $t registers
+combo 6 # Add 6 to all $t registers
 viewboard 
 tetris # If all values in $t registers are at least 4, subtract 4 from each and increase $s0 by 5. Print "Tetris!"
 
-# slowgravity $t3, $t2, 1 # Subtract immediate value 1 from $t2; store in $t3
+slowgravity $t3, $t2, 1 # Subtract immediate value 1 from $t2; store in $t3
 rotate $t3, $t4, $zero # Swap values in $t3 and $t4
 
 
